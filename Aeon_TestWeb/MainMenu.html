@@ -23,9 +23,13 @@
         <#INCLUDE filename="include_footer.html">
     </div>
                 <script>
-                    let y = 'This is y';
-                    let z = 'This is z';
-                    x = y + z;
+                    //Extra comments are normalized out
+                    function () {
+                        let longVariableName = 'This is y';
+                        let otherVariable = 'This is z';
+                        x = longVariableName + otherVariable;
+                        return x;
+                    }
                 </script>
 
 </body>
